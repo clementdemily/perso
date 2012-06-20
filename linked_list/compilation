@@ -1,0 +1,6 @@
+LIB STATIQUE
+gcc -static main.c -L. -lList -o statically_linked
+
+LIB DYNAMIQUE
+LD_LIBRARY_PATH=./
+gcc -I./list/ -L. main.c -lList
